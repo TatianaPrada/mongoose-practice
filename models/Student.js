@@ -9,7 +9,8 @@ const studentSchema = new Schema ({
     lastName: {type: String, required: true},
     age: {type: Number, required: true, max: 99},
     class: {type: String, enum: ["A", "B"]},
-    pendingBills: {type: Boolean, default: false}
+    pendingBills: {type: Boolean, default: false},
+    idioma: {type: String}
 }, { versionKey: false, timestamps: true})
 
 module.exports = mongoose.model('Student', studentSchema)  // recibe como 1er argumento el nombre del model y como 2do el nombre del schema

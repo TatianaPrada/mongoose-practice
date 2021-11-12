@@ -1,15 +1,15 @@
 //variables
-
-
 const mongoose = require('mongoose')
 const chalk = require('chalk')
-
 const DB = 'mongose-example'
+
+
+
 
 //Models
 const Student = require('./models/Student.js')
 
-// llamar a la base de datos:
+// llamar a la base de datos MONGODB:
 
 const connectToMongo = async () => {
     try {
@@ -23,7 +23,6 @@ const connectToMongo = async () => {
         console.log(`Error: err`)
     }
 }
-
 connectToMongo()
 
 
@@ -48,7 +47,6 @@ const createStudent = async()=>{
     }
   
   }
-  
 //   createStudent()
 
   //READ:
